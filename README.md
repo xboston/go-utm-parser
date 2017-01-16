@@ -1,6 +1,13 @@
-# go-utm-parser
-Fast UTM Parser
+# Golang Fast UTM Parser
+[![GoDoc](https://godoc.org/github.com/xboston/go-utm-parser?status.svg)](http://godoc.org/github.com/xboston/go-utm-parser)
+[![Build Status](https://travis-ci.org/xboston/go-utm-parser.svg?branch=master)](https://travis-ci.org/xboston/go-utm-parser)
 
+## Setup
+```
+go get -u github.com/xboston/go-utm-parser
+```
+
+## Example
 ```go
 package main
 
@@ -20,6 +27,7 @@ func main() {
 ```
 
 
+## Benchmark
 ```
 $ go version
 go version go1.7.3 darwin/amd64
@@ -33,3 +41,9 @@ BenchmarkParallelParseQueryFull-4   	 5000000	       351 ns/op	     336 B/op	   
 PASS
 ok  	github.com/xboston/go-utm-parser	11.506s
 ```
+
+
+## License
+>You can check out the full license [here](https://github.com/xboston/go-utm-parser/blob/master/LICENSE)
+
+This project is licensed under the terms of the **MIT** license.
