@@ -2,8 +2,8 @@ language: go
 
 go:
   - 1.6
-  - 1.7
-  - tip
+  - 1.7.x
+  - master
 
 script:
   # build test for supported platforms
@@ -14,4 +14,4 @@ script:
   - GOARCH=386 go build
 
   # run tests on a standard platform
-  - go test -v ./...
+  - go test -v
